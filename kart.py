@@ -1,9 +1,9 @@
 import random
 
 money=int(input("Enter your money: "))
+print(f"Your money {money}$")
 
 while money>0:
-    print(f"Your money {money}")
     bet=int(input("Enter your bet: "))
     card=["HEARTS","DİAMONDS","CLUBS","SPADES"]
     number=["A","K","Q","J","10","9","8","7","6","5","4","3","2"]
@@ -19,7 +19,7 @@ while money>0:
 
     if youNumber=="A":
         if yourTotal<=11:
-            yourTotal+=10
+            yourTotal+=11
         else:
             yourTotal+=1
     elif youNumber=="K":
@@ -49,7 +49,7 @@ while money>0:
 
     if dealerNumber=="A":
         if dealerTotal<=11:
-            dealerTotal+=10
+            dealerTotal+=11
         else:
             dealerTotal+=1
     elif dealerNumber=="K":
@@ -77,7 +77,7 @@ while money>0:
     elif dealerNumber=="2":
         dealerTotal+=2
         
-    print(f"Your hand {youCard} {youNumber}, Dealer hand {dealerCard} {dealerNumber}")
+    print(f"Your hand {youCard} {youNumber}, Total: {yourTotal}\nDealer hand {dealerCard} {dealerNumber}, Total: {dealerTotal}")
 
     while yourTotal<21 and dealerTotal<17:
         select=input("1: HİT or 2: STAY\n:")
@@ -87,7 +87,7 @@ while money>0:
             youNumber=random.choice(number)
             if youNumber=="A":
                 if yourTotal<=11:
-                    yourTotal+=10
+                    yourTotal+=11
                 else:
                     yourTotal+=1
             elif youNumber=="K":
@@ -120,7 +120,7 @@ while money>0:
                 dealerNumber=random.choice(number)
                 if dealerNumber=="A":
                     if dealerTotal<=11:
-                        dealerTotal+=10
+                        dealerTotal+=11
                     else:
                         dealerTotal+=1
                 elif dealerNumber=="K":
@@ -172,6 +172,14 @@ while money>0:
     elif dealerTotal>21:
         print("Dealer bust! You win!")
         money+=bet
-
+    print(f"Your money {money}$")
+    if money>0:
+        select_coe=input("1.Continue or 2.End: ")
+        if select_coe=="1":
+            continue
+        elif select_coe=="2":
+            break
+    else:
+        break
 if money<=0:
     print("You sank!")
