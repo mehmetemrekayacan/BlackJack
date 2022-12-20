@@ -74,10 +74,9 @@ elif dealerNumber=="2":
     
 print(f"Your hand {youCard} {youNumber}, Dealer hand {dealerCard} {dealerNumber}")
 
-while yourTotal<21:
-    select=input("1: HİT\n2: STAY\n")
+while yourTotal<21 and dealerTotal<17:
+    select=input("1: HİT or 2: STAY\n:")
     
-
     if select=="1":
         youCard=random.choice(card)
         youNumber=random.choice(number)
@@ -110,12 +109,9 @@ while yourTotal<21:
             yourTotal+=3
         elif youNumber=="2":
             yourTotal+=2
-
-
     
     elif select=="2":
-        while dealerTotal>21:
-            dealerCard=random.choice(card)
+        while dealerTotal<17:
             dealerNumber=random.choice(number)
             if dealerNumber=="A":
                 if dealerTotal<=11:
@@ -146,21 +142,23 @@ while yourTotal<21:
                 dealerTotal+=3
             elif dealerNumber=="2":
                 dealerTotal+=2
-    print(f"Your hand {youCard} {youNumber} Your total {yourTotal}, Dealer hand {dealerCard} {dealerNumber}")
+
+    print(f"Your hand {youCard} {youNumber} Your total {yourTotal}")
 
 print(f"Your total {yourTotal}, Dealer total {dealerTotal}") 
-    
-        
-if yourTotal<21 and dealerTotal<21:
-        if yourTotal>dealerTotal:
-            if dealerTotal>21:
-                print("Dealer bust! You win!")
-            elif dealerTotal==21:
-                print("Blackjack! Dealer win!")
-            elif yourTotal==21:
-                print("Blackjack! You win!")
-            else:
-                print("Dealer lost! You win!")
+
+     
+if yourTotal<=21 and dealerTotal<=21:
+        if dealerTotal==21:
+            print("Blackjack! Dealer win!")
+        elif yourTotal==21:
+            print("Blackjack! You win!")
+        elif yourTotal>dealerTotal:
+            print("Dealer lost! You win!")
+        elif yourTotal<dealerTotal:
+            print("You lost! Dealer win!")
 elif yourTotal>21:
     print("You bust! Dealer win!")
+elif dealerTotal>21:
+    print("Dealer bust! Bust win!")
 
