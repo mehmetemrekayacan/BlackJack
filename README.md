@@ -1,1 +1,1 @@
-# BlackJack Card Game
+#  Gambling and Card Games
