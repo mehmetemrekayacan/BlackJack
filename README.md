@@ -7,4 +7,5 @@
 ![Ekran Alıntısı](https://user-images.githubusercontent.com/116388836/218527561-9da367e2-8ed9-4bc9-a400-1f8a5f699c62.PNG)
 
 **HİT**
+
 ![hit](https://user-images.githubusercontent.com/116388836/218527783-8bd7659f-8a92-4fb7-bfce-65dd1fa9b3c3.PNG)
