@@ -12,4 +12,8 @@
 
 **STAY**
 
+![stay](https://user-images.githubusercontent.com/116388836/218528532-c82ee303-6d34-4803-b5f2-e2ad050dcd62.PNG)
 
+*Writes as specified according to the latest state of the game*
+
+![sonuç](https://user-images.githubusercontent.com/116388836/218528936-fe50a784-6518-45b5-bbe6-ac2ed6f1ac42.PNG)
