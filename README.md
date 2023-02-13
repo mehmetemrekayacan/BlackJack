@@ -25,3 +25,17 @@
 
 ![sonuç](https://user-images.githubusercontent.com/116388836/218528936-fe50a784-6518-45b5-bbe6-ac2ed6f1ac42.PNG)
 
+**Continue or End**
+
+![devam dur](https://user-images.githubusercontent.com/116388836/218529736-ad6ce9d8-e156-4f53-a6bc-bd50eae70336.PNG)
+
+*İf you choose the continue the game will place a bet on you and you will continue the game*
+
+![devam](https://user-images.githubusercontent.com/116388836/218530414-814a8483-52fe-4f59-90c8-ca6296eaa81f.PNG)
+
+*İf you choose the end the game will show your last coin and it ends*
+
+![son](https://user-images.githubusercontent.com/116388836/218530820-8c88a689-23c1-4b5f-8ffb-1c52334a2fbb.PNG)
+
+
+
