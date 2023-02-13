@@ -76,6 +76,7 @@ while money>0:
         dealerTotal+=3
     elif dealerNumber=="2":
         dealerTotal+=2
+    
         
     print(f"Your hand {youCard} {youNumber}, Total: {yourTotal}\nDealer hand {dealerCard} {dealerNumber}, Total: {dealerTotal}")
 
@@ -178,6 +179,7 @@ while money>0:
         if select_coe=="1":
             continue
         elif select_coe=="2":
+            print(f"Your last money is {money}$")
             break
     else:
         break
