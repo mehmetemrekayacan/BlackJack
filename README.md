@@ -1,5 +1,5 @@
-#  Gambling and Card Games
-## Ekran Görüntüleri
+#  BLACKJACK CARD GAME
+## LOGIC OF THE GAME
 
 **Enter your money**
 
